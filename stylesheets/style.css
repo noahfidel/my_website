@@ -23,13 +23,47 @@ h2 {
     text-align: center;    
 }
 
+h3{
+  font-size: 20px;
+  text-align: center;
+}
+
 .img-circle {
     border-radius: 50%;
 }
 
-.resize {
+.resize-small {
     width: 60px;
     height: auto;
+}
+
+.resize-medium {
+    width: 100px;
+    height: auto;
+}
+
+.extra_logo {
+
+  text-align: center;
+}
+
+.code_project{
+  text-align: center;
+}
+
+img.code_project{
+  display: block;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.extra_logo {
+
+  display: block;
+    
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* line 23, ../sass/style.scss */
