@@ -10,13 +10,32 @@
 
 <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 
-<link rel="stylesheet" href="/css/magnify.css">
+<link rel="stylesheet" href="/stylesheets/magnify.css">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="/js/jquery.magnify.js"></script>
+<!-- Optional mobile plugin: -->
+<!-- <script src="/js/jquery.magnify-mobile.js"></script> -->
 
 
+<script language="javascript" type="text/javascript" src="/js/jquery.magnify.js"></script>
 
-<script language="javascript" type="text/javascript" src="javascript.js"></script>
+<script>
+$(document).ready(function() {
+  $('.zoom').magnify();
+});
+</script>
+
+
+<script>
+$(document).ready(function() {
+  $('.zoom').magnify(speed){
+    speed: 200,
+    src: '/images/swift.png'
+  });
+});
+</script>
+<!---TODO for when the mouse leaves the article, destroy the "magnifying lens"-->
+
 
 <title>Best of Ann Arbor</title>
 </head>
@@ -91,13 +110,11 @@
         <p class = "code_project"> blah blah blah </p>
         </div>
 
-        
+        <h2 >writing</h2>
+
         <div id = "writing-section" class="fixed-bg">
-            <img src="images/accrington-stanley.jpg" alt="Accrington Stanley" />
-            <h4><u>Best New writing:</u></h4>
-            <h2><b>Writing</b></h2> 
-            <!---TODO!!!!-->
-            <h5>300 W Liberty St, Ann Arbor, MI 48103</h5>
+            <img src="/images/cpp.png" class="zoom" data-magnify-src="/images/swift.png">
+            <img src="/images/cpp.png" class="zoom" data-magnify-src="/images/cpp.png">
         </div>
         
         <h2 >extracurricular</h2>
