@@ -1,0 +1,114 @@
+// Variables
+$md-main-color: #374567;
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body { line-height: 1;}
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+/* remember to define focus styles! */
+:focus { outline: 0; }
+/* remember to highlight inserts somehow! */
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+/* tables still need 'cellspacing="0"' in the markup */
+table { border-collapse: collapse; border-spacing: 0; }
+/*- -*/
+/*- GENERIC BODY STYLES -*/
+body {
+	font: 12px/18px Arial, Helvetica, sans-serif;
+	color: #333;
+	background: #fff;
+}
+p { margin-bottom: 18px; }
+a { text-decoration: underline; }
+a:hover { text-decoration: none; }
+#container { width: 802px; margin: 0 auto; }
+
+#head1 {
+    text-align: center;
+    background-color: #F1F5F8;
+    width: 100%;
+    margin-bottom: 40px;
+    height: 10%;
+    img {
+        height: 200px;
+    }
+}
+
+#map {
+  height: 300px;
+  width: 70%;
+  margin-left: 20%;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.item {
+    text-align: center;
+}
+
+#sidebar-wrapper {
+  top: 200px;
+  left: -200px;
+  width: 200px;
+  background-color: $md-main-color;
+  color: white;
+  position: fixed;
+  height: 100%;
+  z-index: 1;
+}
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  list-style: none;
+}
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 50px;
+}
+.sidebar-nav li a {
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+.sidebar-nav li a:hover {
+  background: rgba(255,255,255,0.25);
+  color: white;
+  text-decoration: none;
+}
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
+  text-decoration: none;
+}
+#sidebar-wrapper.sidebar-toggle {
+  transition: all 0.3s ease-out;
+  margin-left: -200px;
+}
+@media (min-width: 768px) {
+  #sidebar-wrapper.sidebar-toggle {
+    transition: 0s;
+    left: 200px;
+  }
+}
