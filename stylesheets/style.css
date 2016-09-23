@@ -23,6 +23,15 @@ h2 {
     text-align: center;    
 }
 
+.img-circle {
+    border-radius: 50%;
+}
+
+.resize {
+    width: 60px;
+    height: auto;
+}
+
 /* line 23, ../sass/style.scss */
 body {
   line-height: 1;
@@ -99,17 +108,21 @@ a:hover {
   margin: 0 auto;
 }
 
+#head1 .name{
+  text-align: center;
+}
+
 /* line 47, ../sass/style.scss */
 #head1 {
-  text-align: center;
   background-color: #F1F5F8;
   width: 100%;
   margin-bottom: 40px;
   height: 10%;
+  position: fixed;
 }
 /* line 53, ../sass/style.scss */
-#head1 img {
-  height: 200px;
+#head1 .portfolio {
+  float: right;
 }
 
 /* line 58, ../sass/style.scss */
@@ -136,6 +149,25 @@ a:hover {
   position: fixed;
   height: 100%;
   z-index: 1;
+}
+
+#coding-section{
+
+  background-image: url(../images/code.png)
+
+}
+
+#writing-section{
+
+
+}
+
+.fixed-bg {
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* line 80, ../sass/style.scss */
