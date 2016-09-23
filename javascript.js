@@ -22,6 +22,14 @@ $(document).ready(function() {
 	});
 });
 
+$(document).mousemove(function(e){
+var $width = ($(document).width())/255;
+var $height = ($(document).height())/255;
+var $pageX = parseInt(e.pageX / $width,10);
+var $pageY = parseInt(e.pageY / $height,10);
+$("#writing-section").css("background-color", "rgb("+$pageX+","+$pageY+","+$pageX+")");
+}); 
+
 $(window).resize(function() {
 	var path = $(this);
 	var contW = path.width();
@@ -69,6 +77,9 @@ $(document).ready(function(){
 	    return false;
 	});
 
+
+
+
   $(window).scroll(function() {
 		if ($(window).scrollTop() + $(window).height() == $(document).height()) {
 			$(".block.w15.btn_img").fadeIn("slow");
@@ -77,11 +88,4 @@ $(document).ready(function(){
 
 });
 
-$(document).mousemove(function(e){
-var $width = ($(document).width())/255;
-var $height = ($(document).height())/255;
-var $pageX = parseInt(e.pageX / $width,10);
-var $pageY = parseInt(e.pageY / $height,10);
-$("body").css("background-color", "rgb("+$pageX+","+$pageY+","+$pageX+")");
-}); 
 
